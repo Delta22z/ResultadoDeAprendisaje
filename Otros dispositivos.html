@@ -6,77 +6,70 @@
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <center>
   <header>
     <h1>Dispositivos móviles</h1>
   </header>
   <main>
     <section class="tipo-dispositivo">
-      <h2>Teléfonos inteligentes</h2>
-      <ul class="lista-dispositivos">
-        <li>
-          <a href="#">
-            <img src="img/iphone.png" alt="iPhone">
-            <h3>iPhone</h3>
-          </a>
-          <ul class="menu-caracteristicas">
-            <li>Pantalla: 6,1 pulgadas</li>
-            <li>Procesador: A15 Bionic</li>
-            <li>Memoria: 128 GB, 256 GB, 512 GB</li>
-            <li>Cámara: 12 MP</li>
-            <li>Batería: 3.095 mAh</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/samsung-galaxy.png" alt="Samsung Galaxy">
-            <h3>Samsung Galaxy S22 Ultra</h3>
-          </a>
-          <ul class="menu-caracteristicas">
-            <li>Pantalla: 6,8 pulgadas</li>
-            <li>Procesador: Snapdragon 8 Gen 1</li>
-            <li>Memoria: 128 GB, 256 GB, 512 GB, 1 TB</li>
-            <li>Cámara: 108 MP</li>
-            <li>Batería: 5.000 mAh</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/xiaomi-redmi.png" alt="Xiaomi Redmi">
-            <h3>Xiaomi Redmi Note 11 Pro</h3>
-          </a>
-          <ul class="menu-caracteristicas">
-            <li>Pantalla: 6,67 pulgadas</li>
-            <li>Procesador: MediaTek Dimensity 920</li>
-            <li>Memoria: 64 GB, 128 GB</li>
-            <li>Cámara: 108 MP</li>
-            <li>Batería: 5.000 mAh</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/google-pixel.png" alt="Google Pixel">
-            <h3>Google Pixel 6 Pro</h3>
-          </a>
-          <ul class="menu-caracteristicas">
-            <li>Pantalla: 6,7 pulgadas</li>
-            <li>Procesador: Google Tensor</li>
-            <li>Memoria: 128 GB, 256 GB</li>
-            <li>Cámara: 50 MP</li>
-            <li>Batería: 5.000 mAh</li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/oppo-find-x.png" alt="Oppo Find X">
-            <h3>Oppo Find X5 Pro</h3>
-          </a>
-          <ul class="menu-caracteristicas">
-            <li>Pantalla: 6,7 pulgadas</li>
-            <li>Procesador: Snapdragon 8 Gen 1</li>
-            <li>Memoria: 128 GB, 256 GB, 512 GB</li>
-            <li>Cámara: 50 MP</li>
-            <li>Batería: 5.000 mAh</li>
-          </ul>
-        </li>
-      </ul>
-    </section
+      <h2></h2>
+      <table class="tabla-dispositivos">
+        <tr>
+          <th>Imagen</th>
+          <th>Modelo</th>
+          <th>Pantalla</th>
+          <th>Procesador</th>
+          <th>Memoria</th>
+          <th>Cámara</th>
+          <th>Batería</th>
+        </tr>
+        <tr>
+          <td><img src="IMG/tables/ipad.jpg"  width="100" height="100"alt="iPhone"></td>
+          <td>iPad</td>
+          <td>6,1 pulgadas</td>
+          <td>A15 Bionic</td>
+          <td>128 GB, 256 GB, 512 GB</td>
+          <td>12 MP</td>
+          <td>3.095 mAh</td>
+        </tr>
+        <!-- Add more rows for other devices -->
+        <tr>
+          <td><img src="IMG/tables/ipad pro.jpg"  width="100" height="100"alt="iPhone"></td>
+          <td>iPad pro</td>
+          <td>8,1 pulgadas</td>
+          <td>A13 Bionic chip</td>
+          <td>128 GB, 256 GB, 512 GB</td>
+          <td>12 MP</td>
+          <td>3.095 mAh</td>
+        </tr>
+        <tr>
+          <td><img src="IMG/tables/tablet samsung.jpg" width="100" height="100" alt="iPhone"></td>
+          <td>Samsung Galaxy</td>
+          <td>6,1 pulgadas</td>
+          <td>A15 Bionic</td>
+          <td>64 GB</td>
+          <td>12 MP</td>
+          <td>3.095 mAh</td>
+        </tr>
+        <tr>
+          <td><img src="IMG/tables/xiaomi tablet.jpg" width="100" height="100" alt="iPhone"></td>
+          <td>Xiaomi Redmi Pad </td>
+          <td>6,1 pulgadas</td>
+          <td>A15 Bionic</td>
+          <td>128 GB</td>
+          <td>12 MP</td>
+          <td>3.095 mAh</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <button class="call-center-button" onclick="redirectToIndex()">Volver al inicio</button>
+
+</body>
+<script>
+  function redirectToIndex() {
+    // Redirigir a la página "index.html"
+    window.location.href = "index.html";
+  }
+  </script>
+</html>
