@@ -4,6 +4,33 @@
   <meta charset="UTF-8">
   <title>CALL CENTER</title>
   <link rel="stylesheet" href="estilo.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const chatContainer = document.getElementById("chat-container");
+  const chatCloseButton = document.getElementById("chat-close-button");
+  const userMessage = document.getElementById("user-message");
+  const sendButton = document.getElementById("send-button");
+  const chatBody = document.getElementById("chat-body");
+
+  // Mostrar el chat al cargar la página
+  chatContainer.classList.add("show");
+
+  // Ocultar el chat al hacer clic en el botón de cierre
+  chatCloseButton.addEventListener("click", function () {
+    chatContainer.style.display = "none";
+  });
+
+  // Agregar evento al botón de envío
+  sendButton.addEventListener("click", function () {
+    const message = userMessage.value;
+    if (message.trim() !== "") {
+      chatBody.innerHTML += `<div class="user-message">${message}</div>`;
+      userMessage.value = "";
+    }
+  });
+});
+
+  </script>
 </head>
 <body>
     <center>
@@ -40,6 +67,22 @@
       </ul>
     </section>
   </main>
+  <div id="chat-container">
+    <div id="chat-box">
+      <div id="chat-header">
+        Chat de Sugerencias
+        <span id="chat-close-button">X</span>
+      </div>
+      <div id="chat-body">
+        ¡Hola! ¿En qué puedo ayudarte?
+      </div>
+      <div id="chat-input">
+        <textarea id="user-message" placeholder="Escribe tu comentario"></textarea>
+        <button id="send-button">Enviar</button>
+      </div>
+    </div>
+  </div>  
+  
   <footer>
     <p>Todos Los derechos reservados Copyright &copy; 2023</p>
   </footer>
